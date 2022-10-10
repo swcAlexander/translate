@@ -1,0 +1,12 @@
+.navigation {
+  background: linear-gradient(270deg, rgb(196, 212, 209) 0%, #fcfeff 100%);
+  padding: 24px 48px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
