@@ -1,33 +1,80 @@
-header {
+:root {
+  --primary-text-color: #757575;
+  --secondery-text-color: #FFFFFF;
+  --title-text-color: #212121;
+  --accent-color: #2196F3;
+  --primary-while-color: #F5F5F5;
+  --secondery-while-color: #2F303A;
+  --navigation-color: rgb(209, 49, 49);
+  --main-backgound-color: linear-gradient(270deg, rgb(196, 212, 209) 0%, #fcfeff 100%);
+}
 
-  display: flex;
-  text-align: right;
-  padding: auto;
+.logo-start {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--accent-color);
+
+}
+
+.logo-end {
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  line-height: 1.3;
+  color: var(--title-text-color);
+
 }
 .navigation {
   width: 100%;
   height: 5%;
-  background: linear-gradient(270deg, rgb(196, 212, 209) 0%, #fcfeff 100%);
+  background: var(--main-backgound-color);
   padding: 24px 48px;
   font-family: Roboto;
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   display: flex;
-  
 }
-.header-nav {
-  padding: auto;
-  display: flex;
-  list-style-type: none;
+.navigation a {
+  text-decoration: none;
 }
-.general-nav {
+.auth-nav {
   list-style-type: none;
   display: flex;
+  margin: auto;
 }
-.list-general-nav {
-  color: rgb(209, 49, 49);
-  border: 3px tomato;
+.auth-nav a {
+  text-decoration: none;
+  padding: 24px 16px;
+
+}
+.auth {
+  text-align: right;
+  color: var(--navigation-color);
+}
+
+.menu-nav {
+  width: 300px;
+}
+.site-nav {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+
+  font-size: 32px;
+  line-height: 1.2;
+
+  width: 300px;
+}
+
+.site-nav a {
+  text-decoration: none;
+  list-style-type: none;
+  display: block;
+}
+.list-site-nav {
+  color: var(--navigation-color);
+  border: 3px --accent-color;
   padding: 16px 24px;
 }
