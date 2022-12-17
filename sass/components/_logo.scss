@@ -1,0 +1,17 @@
+.logo {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.6;
+  letter-spacing: 0.3em;
+}
+
+.logo__start {
+  color: var(--accent-color);
+}
+
+.logo__end {
+  color: var(--secondary-text-color);
+}

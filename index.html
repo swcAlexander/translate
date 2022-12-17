@@ -5,61 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Metafrasy</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&amp;family=Roboto:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="/css/navigationStyles.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <div class="header-nav">
+    <header class="header">
+      <div class="container">
         <div class="navigation">
-          <a href="../index.html"
-            ><span class="logo-start">μετά</span
-            ><span class="logo-end">φραση</span></a
-          >
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="mailto:swcalexander@gmail.com" class="auth"
+          <button type="button" class="logo" data-modal-open>
+            <span class="logo__start">μετά</span
+            ><span class="logo__end">φραση</span>
+          </button>
+          <ul class="contacts">
+            <li class="contacts__item">
+              <a href="mailto:swcalexander@gmail.com" class="contacts__link"
                 >swcalexander@gmail.com</a
               >
-              <img
-                src="/images/title-bible.jpg"
-                alt="Цитата з Біблії"
-                width="320"
-                class="mane-image" />
             </li>
-            <li class="nav-item">
-              <a href="tel:+380677609488" class="auth">+38 0677609488</a>
+            <li class="contacts__item">
+              <a href="tel:+380677609488" class="contacts__link"
+                >+38 0677609488</a
+              >
             </li>
           </ul>
+        </div>
+        <div class="nav" data-modal>
+          <nav>
+            <button
+              type="button"
+              class="button-close"
+              data-modal-close></button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="/pages/Translate.html" class="nav__link"
+                  >ПЕРЕКЛАДИ БОГОСЛУЖІНЬ</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="tel:" class="nav__link">СТАТТІ</a>
+              </li>
+              <li class="nav__item">
+                <a href="/" class="nav__link">ДЛЯ ОБГОВОРЕННЯ</a>
+              </li>
+              <li class="nav__item">
+                <a href="../index.html" class="nav__link">ПРО ПЕРЕКЛАД</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
     <main>
-      <div class="navigation">
-        <nav>
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="/pages/Translate.html" class="list-site-nav"
-                >ПЕРЕКЛАДИ БОГОСЛУЖІНЬ</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="tel:" class="list-site-nav">СТАТТІ</a>
-            </li>
-            <li class="nav-item">
-              <a href="/" class="list-site-nav">ДЛЯ ОБГОВОРЕННЯ</a>
-            </li>
-            <li class="nav-item">
-              <a href="../index.html" class="list-site-nav">ПРО ПЕРЕКЛАД</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-      <label for="nav-trigger"></label>
       <section class="main-page">
         <h1>Про переклад</h1>
         <article class="about-text">
@@ -171,5 +176,6 @@
         <p class="footer-text-iban">Картка ПриватБанку: 4731219123597415</p>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
