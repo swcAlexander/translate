@@ -18,7 +18,7 @@
     width: 50%;
     height: 100%;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 2;
@@ -31,18 +31,28 @@
     transition: transform 500ms cubic-bezier(0.08, 0.72, 0.94, 0.59);
   }
   &::backdrop {
-    background-color: rgba(0, 255, 255, 0.8);
+    background-color: rgba(0, 255, 255, 0.9);
   }
 }
 
 .nav__list {
 }
-.nav__item {
+.mane-nav {
+  background-color: transparent;
+  border-color: transparent;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 32px;
   line-height: 1.2;
   letter-spacing: normal;
+  color: var(--secondary-white-color);
+}
+.nav__item {
   text-align: right;
+}
+
+.nav__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .submenu {
@@ -70,7 +80,7 @@
 }
 
 .button-close {
-  position: absolute;
+  position: fixed;
   top: 15px;
   right: 15px;
 

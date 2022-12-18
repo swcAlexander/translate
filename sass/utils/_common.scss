@@ -21,7 +21,7 @@ img {
   height: auto;
 }
 
-.h1,
+h1,
 h2,
 h3,
 h4,
@@ -33,9 +33,42 @@ p {
 }
 
 .container {
-  width: 75em;
+  max-width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 1em;
   padding-right: 1em;
+  @media screen and (min-width: 480px) {
+    max-width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.is-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.centred {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.inline-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

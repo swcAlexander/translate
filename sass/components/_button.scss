@@ -1,0 +1,30 @@
+.button {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-color: var(--accent-color);
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+}
+
+.button-text {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.button-text::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icons.svg#icon-send);
+}
